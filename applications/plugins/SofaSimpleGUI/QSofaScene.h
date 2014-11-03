@@ -4,10 +4,10 @@
 #include <QObject>
 #include <QTimer>
 
-#include "../SofaGLScene.h"
+#include "SofaGL.h"
 
 namespace sofa {
-namespace newgui {
+namespace simplegui {
 
 /**
  * @brief The QSofaScene class is a SofaScene which can be connected to other Qt objects, such as viewers, using signals and slots.
@@ -15,7 +15,7 @@ namespace newgui {
  *
  * @author Francois Faure, 2014
  */
-class QSofaScene : public QObject, public SofaScene
+class SOFA_SOFASIMPLEGUI_API QSofaScene : public QObject, public SofaScene
 {
     Q_OBJECT
 public:
@@ -35,8 +35,8 @@ public slots:
      * @param filename new scene to open
      */
     void open(const char* filename);
-    /// re-open the current scene
-    void reload();
+//    /// re-open the current scene
+//    void reload();
     /// Apply one simulation time step
     void step();
     /// Set the length of the simulation time step
