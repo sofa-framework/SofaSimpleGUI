@@ -22,17 +22,15 @@
 *                                                                             *
 * Contact information: contact@sofa-framework.org                             *
 ******************************************************************************/
-#ifndef INITSimpleGUI_H
-#define INITSimpleGUI_H
-
+#ifndef SOFASIMPLEGUI_CONFIG_H
+#define SOFASIMPLEGUI_CONFIG_H
 
 #include <sofa/helper/system/config.h>
 
 #ifdef SOFA_BUILD_SOFASIMPLEGUI
-#define SOFA_SOFASIMPLEGUI_API SOFA_EXPORT_DYNAMIC_LIBRARY
+#  define SOFA_SOFASIMPLEGUI_API SOFA_EXPORT_DYNAMIC_LIBRARY
 #else
-#define SOFA_SOFASIMPLEGUI_API  SOFA_IMPORT_DYNAMIC_LIBRARY
+#  define SOFA_SOFASIMPLEGUI_API  SOFA_IMPORT_DYNAMIC_LIBRARY
 #endif
 
-
-#endif // INITSimpleGUI_H
+#endif
